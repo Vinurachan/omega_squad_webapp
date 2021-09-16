@@ -1,12 +1,13 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import NavBar from "./shared/NavBar";
+import HomePage from "./home/HomePage";
 import "./App.css";
-import {db} from "./firebase/firebase";
 
 const App = () => {
   return (
     <main id="main">
+      <NavBar />
       <Switch>
         <Route exact path="/">
           <HomePage />
