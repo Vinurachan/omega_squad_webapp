@@ -1,6 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
 import React from "react";
-import NavBar from "../components/NavBar";
 import { db } from "../firebase/firebase";
 
 const HomePage = () => {
@@ -13,18 +12,14 @@ const HomePage = () => {
   };
 
   return (
-    <div className="container">
-      <NavBar />
-      <div style={{ marginTop: 100 }}>
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            fetchUser();
-          }}
-          type="Submit"
-        >
-          Retrieve
-        </button>
+    <div class="container-fluid ">
+      <div class="row">
+        <div id="hero" class="col-xl-6 col-lg-7">
+          Timetable Scheduling System
+        </div>
+        <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+          <h3>Welcome to TMS</h3>
+        </div>
       </div>
     </div>
   );
