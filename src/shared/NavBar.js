@@ -8,7 +8,9 @@ const NavBar = (props) => {
       style={{ backgroundColor: "#1E2A83" }}
     >
       <div class="logo" style={{ marginLeft: 30 }}>
-        <img src="Logo.png" />
+        <a href="">
+          <img src="Logo.png" alt="" class="img-fluid" />
+        </a>
       </div>
       <div class="container d-flex justify-content-between">
         <div>

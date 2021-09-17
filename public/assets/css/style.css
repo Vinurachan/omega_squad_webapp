@@ -412,13 +412,14 @@ h6 {
   padding: 8px 28px;
   border-radius: 4px;
   transition: 0.5s;
-  border: 2px solid #fff;
+  border: 3px solid #3B91D4;
   color: #fff;
+  background: #3B91D4;
 }
 
 #hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
+  border-color: white;
+  /* background: #1bac91; */
 }
 
 @media (min-width: 1024px) {
