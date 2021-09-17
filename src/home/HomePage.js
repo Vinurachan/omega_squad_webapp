@@ -12,12 +12,13 @@ const HomePage = () => {
   };
 
   return (
-    <div class="container-fluid ">
-      <div class="row">
-        <div id="hero" class="col-xl-6 col-lg-7">
-          Timetable Scheduling System
-        </div>
-        <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+    <div class="container-fluid">
+      <div id="hero" class="row">
+        <div class="col-xl-8 bg">Timetable Scheduling System</div>
+        <div
+          class="col-xl-4 d-flex justify-content-center "
+          style={{ backgroundColor: "red" }}
+        >
           <h3>Welcome to TMS</h3>
         </div>
       </div>
