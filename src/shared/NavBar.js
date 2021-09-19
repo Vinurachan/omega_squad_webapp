@@ -1,6 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 const NavBar = (props) => {
+  const history = useHistory();
+
   return (
     <header
       id="header"
@@ -19,17 +22,29 @@ const NavBar = (props) => {
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-              <a class="nav-link scrollto active" href="#hero">
+              <a
+                class="nav-link scrollto"
+                href="#hero"
+                onClick={() => history.push("/")}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#about">
+              <a
+                class="nav-link scrollto"
+                href="#about"
+                onClick={() => history.push("/timetable")}
+              >
                 About
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#contact">
+              <a
+                class="nav-link scrollto"
+                href="#contact"
+                onClick={() => history.push("/studentView")}
+              >
                 Contact
               </a>
             </li>
